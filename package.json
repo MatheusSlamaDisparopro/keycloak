@@ -5,7 +5,11 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "login": "pnpm --filter login",
+    "dev:login": "turbo dev --filter login",
+    "build:login": "turbo build --filter login",
+    "prod:login": "pnpm --filter login prod"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
